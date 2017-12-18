@@ -9,6 +9,17 @@ public class highArray {
         this.nElems = 0;
     }
 
+    public int getMax(){
+        // TODO: 18.12.2017 Реализовать метод поиска максимума в массиве
+        return 0;
+    }
+
+    public int removeMax(){
+        // TODO: 18.12.2017 Потом заменить getMax на этот метод
+        // TODO: 18.12.2017 Поиск не только максимума но и удаление его из массива с уменьшением последнего
+        return 0;
+    }
+
     /**
      * Поиск заданного значения
      * @param searchKey какое значение найти
@@ -23,18 +34,28 @@ public class highArray {
         else return true;
     }
 
+    /**
+     * Вставка элемента в массив
+     * @param value значение которое надо вставить
+     */
     public void insert(int value){
         a[nElems] = value;
+        // увеличение массива
         nElems++;
     }
 
+    /**
+     * Удалить 1 элемент в массиве
+     * @param value какой элемент удалить
+     * @return если удален, то true
+     */
     public boolean delete(long value){
         int j;
         for (j=0; j<nElems; j++){
-            if (a[j] == value) break;
+            if (a[j] == value) break;           // найдено совпадение
         }
-        if (value == nElems) return false;
-        else {
+        if (value == nElems) return false;      // Достигнут последний элемент массива
+        else {                                  // Уменьшение массива
             for (int i = j; i < nElems; i++){
                 a[i] = a[i+1];
             }
@@ -43,9 +64,13 @@ public class highArray {
         }
     }
 
+    /**
+     * Вывод массива
+     */
     public void display(){
         for (int i = 0; i<nElems; i++){
             System.out.println(a[i]);
         }
     }
 }
+
