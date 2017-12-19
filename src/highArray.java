@@ -21,22 +21,22 @@ public class highArray {
 
         int maxNum = 1;
         int j;
-
-        if (nElems > 0){
-            for (int i = 0; i < nElems; i++) {
-                if (a[i] > maxNum){
-                    maxNum = a[i];
+                                                    // Массив пустой ?
+        if (nElems > 0){                            // Нет
+            for (int i = 0; i < nElems; i++) {      // Проходим по массиву
+                if (a[i] > maxNum){                 // Текущее значение массива больше?
+                    maxNum = a[i];                  // Да, записываем.
                 }
             }
             for (j = 0; j < nElems; j++){
-                if (a[j]==maxNum) break;
+                if (a[j]==maxNum) break;            // Запоминаем положение курсора на максимальном значении
             }
             for (int k = j; k<nElems; k++){
-                a[k] = a[k+1];
+                a[k] = a[k+1];                      // Перезаписываем ячейку с макс k на k+1 значение
             }
-            nElems--;
+            nElems--;                               // и уменьшаем массив
         }
-        else {
+        else {                                      // Да
             maxNum = -1;
         }
         return maxNum;

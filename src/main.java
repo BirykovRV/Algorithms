@@ -4,7 +4,8 @@ public class main {
 
     public static void main(String[] args) {
 
-        highArray array = new highArray(10);
+        highArray array = new highArray(7);
+        int[] sortedArray = new int[7];
 
         array.insert(98);
         array.insert(1);
@@ -13,12 +14,17 @@ public class main {
         array.insert(4);
         array.insert(65);
 
+        System.out.println("Обычный массив:");
         array.display();
         System.out.println();
-        System.out.println("###############");
-        System.out.println(array.removeMax());
-        System.out.println("###############");
-        array.display();
+
+        for (int i = sortedArray.length-1; i > 0 ; i--) {
+            sortedArray[i] = array.removeMax();
+        }
+        System.out.println("Отсортированный массив:");
+        for (int i = 0; i < sortedArray.length; i++) {
+            System.out.print(sortedArray[i] + " ");
+        }
     }
 }
 
