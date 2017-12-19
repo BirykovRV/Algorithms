@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfe166d-a8db-4212-9b0b-a24945ddd7a5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OrderedApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Algorithms/main.class" afterPath="$PROJECT_DIR$/out/production/Algorithms/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/highArray.java" afterPath="$PROJECT_DIR$/src/highArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OrderArray.java" afterPath="$PROJECT_DIR$/src/OrderArray.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,25 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.java">
+      <file leaf-file-name="OrderArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OrderArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="-68">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="highArray.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/highArray.java">
+      <file leaf-file-name="OrderedApp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OrderedApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
-              <folding>
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,9 +64,10 @@
         <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/src/OldArray.java" />
         <option value="$PROJECT_DIR$/src/DataArray.java" />
-        <option value="$PROJECT_DIR$/src/OrderArray.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/highArray.java" />
+        <option value="$PROJECT_DIR$/src/OrderedApp.java" />
+        <option value="$PROJECT_DIR$/src/OrderArray.java" />
       </list>
     </option>
   </component>
@@ -240,7 +242,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.OrderedApp">
+    <configuration name="OrderedApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="OrderedApp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -335,9 +351,14 @@
       <module name="Algorithms" />
       <envs />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.OrderedApp" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.main" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.OrderedApp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -366,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513681354097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="В main добавлена сортировка методом выбора с использованием removeMax">
+      <created>1513685904009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513685904009</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -388,7 +416,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.50535476" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.49464524" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.49464524" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -412,7 +440,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлен метод, который возвращает максимум из масива" />
     <MESSAGE value="ДОбалено в метод для поиска максимума, функция удаления последнего" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДОбалено в метод для поиска максимума, функция удаления последнего" />
+    <MESSAGE value="В main добавлена сортировка методом выбора с использованием removeMax" />
+    <option name="LAST_COMMIT_MESSAGE" value="В main добавлена сортировка методом выбора с использованием removeMax" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -479,11 +508,14 @@
     <entry file="file://$PROJECT_DIR$/src/qwe.java" />
     <entry file="file://$PROJECT_DIR$/src/Person.java" />
     <entry file="file://$PROJECT_DIR$/src/DataArray.java" />
-    <entry file="file://$PROJECT_DIR$/src/OrderArray.java">
+    <entry file="file://$PROJECT_DIR$/src/highArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="48" column="85" lean-forward="false" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding>
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -495,14 +527,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/highArray.java">
+    <entry file="file://$PROJECT_DIR$/src/OrderArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        <state relative-caret-position="-68">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OrderedApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
