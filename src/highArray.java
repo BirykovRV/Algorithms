@@ -9,16 +9,32 @@ public class highArray {
         this.nElems = 0;
     }
 
-    public int getMax(){
-        // TODO: 18.12.2017 Реализовать метод поиска максимума в массиве
+    public int[] getA() {
+        return a;
+    }
+
+    /**
+     * Поиск максимума с удалением его из списка
+     * @return -1 если массив пустой
+     */
+    public int removeMax(){
+
         int maxNum = 1;
-        if (a.length > 0){
-            // Поиск максимума, сложность O(N)
-            for (int i = 0; i < a.length; i++) {
+        int j;
+
+        if (nElems > 0){
+            for (int i = 0; i < nElems; i++) {
                 if (a[i] > maxNum){
                     maxNum = a[i];
                 }
             }
+            for (j = 0; j < nElems; j++){
+                if (a[j]==maxNum) break;
+            }
+            for (int k = j; k<nElems; k++){
+                a[k] = a[k+1];
+            }
+            nElems--;
         }
         else {
             maxNum = -1;
@@ -26,18 +42,12 @@ public class highArray {
         return maxNum;
     }
 
-    public int removeMax(){
-        // TODO: 18.12.2017 Потом заменить getMax на этот метод
-        // TODO: 18.12.2017 Поиск не только максимума но и удаление его из массива с уменьшением последнего
-        return 0;
-    }
-
     /**
      * Поиск заданного значения
      * @param searchKey какое значение найти
      * @return если совпабение найдено true
      */
-    public boolean find(long searchKey){
+    public boolean find(int searchKey){
         int j;
         for (j=0; j<nElems; j++){
             if (a[j] == searchKey) break;
@@ -61,7 +71,7 @@ public class highArray {
      * @param value какой элемент удалить
      * @return если удален, то true
      */
-    public boolean delete(long value){
+    public boolean delete(int value){
         int j;
         for (j=0; j<nElems; j++){
             if (a[j] == value) break;           // найдено совпадение
@@ -81,7 +91,7 @@ public class highArray {
      */
     public void display(){
         for (int i = 0; i<nElems; i++){
-            System.out.println(a[i]);
+            System.out.print(a[i] + " ");
         }
     }
 }
