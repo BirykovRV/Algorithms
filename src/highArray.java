@@ -1,17 +1,29 @@
 public class highArray {
     //Ссылка на массив а
-    private long[] a;
+    private int[] a;
     // Количество элементов в массиве
     private int nElems;
 
     public highArray(int max) {
-        this.a = new long[max];
+        this.a = new int[max];
         this.nElems = 0;
     }
 
     public int getMax(){
         // TODO: 18.12.2017 Реализовать метод поиска максимума в массиве
-        return 0;
+        int maxNum = 1;
+        if (a.length > 0){
+            // Поиск максимума, сложность O(N)
+            for (int i = 0; i < a.length; i++) {
+                if (a[i] > maxNum){
+                    maxNum = a[i];
+                }
+            }
+        }
+        else {
+            maxNum = -1;
+        }
+        return maxNum;
     }
 
     public int removeMax(){
