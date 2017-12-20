@@ -48,10 +48,7 @@ public class OrderArray {
      * @param value Число которое вставить
      */
     public void insert(int value){
-        int j;
-        for (j = 0; j < nElems; j++) {      // Определение позиции вставки
-            if (a[j] > value) break;        // (линейный поиск)
-        }
+        int j = find(value);                // Бинарный поиск
         for (int k = nElems; k > j; k--) {  // Перемещение последующих элементов
             a[k] = a[k-1];
         }
@@ -65,7 +62,7 @@ public class OrderArray {
      * @return true если удалили
      */
     public boolean delete(int value){
-        int j = find(value);
+        int j = find(value);                // Бинарный поиск
         if (j == nElems) return false;      // Найти не удалось
         else{
             for (int k = j; k < nElems; k++){
