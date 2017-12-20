@@ -8,6 +8,10 @@ public class OrderArray {
         this.nElems = 0;
     }
 
+    public int[] getA(){
+        return a;
+    }
+
     public int size(){
         return nElems;
     }
@@ -48,7 +52,10 @@ public class OrderArray {
      * @param value Число которое вставить
      */
     public void insert(int value){
-        int j = find(value);                // Бинарный поиск
+        int j;
+        for (j = 0; j < nElems; j++){       // Линейный поиск
+            if (a[j] > value) break;
+        }
         for (int k = nElems; k > j; k--) {  // Перемещение последующих элементов
             a[k] = a[k-1];
         }
@@ -71,6 +78,31 @@ public class OrderArray {
             nElems--;
             return true;
         }
+    }
+
+    public int[] merge(OrderArray b){
+        int length = a.length + b.size();   // Общий размер 2х массивов
+        int[] temp = new int[length];       // Временный массив
+        int i = 0;                          // Курсор для массива a
+        int j = 0;                          // Курсор для массива b
+        for (int k = 0; k < length; k++){
+
+            if (i == a.length){             // Дошли до конца массива а?
+                temp[k] = b.getA()[j++];    // Да, продолжаем перебирать массив b
+            }
+            else if (j == b.size()){        // Дошли до конца массива b?
+                temp[k] = a[i++];           // Да, продолжаем перебирать массив a
+            }
+            else {
+                if (a[i] < b.getA()[j]){    // Поиск мин значения
+                    temp[k] = a[i++];       // Вставка его в новый массив и пеермещение курсора
+                }
+                else {
+                    temp[k] = b.getA()[j++];
+                }
+            }
+        }
+        return temp;
     }
 
     /**

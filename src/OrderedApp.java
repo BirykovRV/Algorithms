@@ -1,28 +1,22 @@
+import java.util.Random;
+
 public class OrderedApp {
     public static void main(String[] args) {
-        int maxSize = 100;
-        OrderArray arr;
-        arr = new OrderArray(maxSize);
+        Random random = new Random();
+        OrderArray a = new OrderArray(random.nextInt(10));
+        OrderArray b = new OrderArray(random.nextInt(10));
 
-        arr.insert(88);
-        arr.insert(44);
-        arr.insert(22);
-        arr.insert(55);
-        arr.insert(00);
-        arr.insert(33);
-        arr.insert(11);
-        arr.insert(66);
-        arr.insert(77);
-        arr.insert(99);
-
-        int searchKey = 55;
-        if (arr.find(searchKey) != arr.size()){
-            System.out.println("Найден элемент: " + searchKey);
+        for (int i = 0; i < a.getA().length; i++) {
+            a.insert(random.nextInt(100));
         }
-        else {
-            System.out.println("Не удается найти ключ");
+        for (int i = 0; i < b.getA().length; i++) {
+            b.insert(random.nextInt(100));
         }
-        arr.display();
 
+        int[] result = a.merge(b);
+
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " ");
+        }
     }
 }
