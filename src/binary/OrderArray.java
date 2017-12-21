@@ -1,3 +1,5 @@
+package binary;
+
 public class OrderArray {
 
     private int[] a;

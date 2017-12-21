@@ -1,3 +1,5 @@
+package binary;
+
 import java.util.Random;
 
 public class OrderedApp {
