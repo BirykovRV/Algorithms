@@ -19,7 +19,7 @@ public class Reverser {
         output = "";
         while (!stack.isEmpty()){
             char ch = stack.pop();
-            output = output + ch;
+            output += ch;
         }
         return output;
     }

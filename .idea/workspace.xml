@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfe166d-a8db-4212-9b0b-a24945ddd7a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/revers/BracketChecker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/revers/ReversApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/revers/Reverser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/revers/StackX.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/revers/Reverser.java" afterPath="$PROJECT_DIR$/src/revers/Reverser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="Reverser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/revers/Reverser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="e#198#199#0" expanded="true" />
                 <element signature="e#229#230#0" expanded="true" />
@@ -114,9 +111,9 @@
         <option value="$PROJECT_DIR$/src/insert/ArrayIns.java" />
         <option value="$PROJECT_DIR$/src/insert/InsertSortApp.java" />
         <option value="$PROJECT_DIR$/src/revers/StackX.java" />
-        <option value="$PROJECT_DIR$/src/revers/Reverser.java" />
         <option value="$PROJECT_DIR$/src/revers/ReversApp.java" />
         <option value="$PROJECT_DIR$/src/revers/BracketChecker.java" />
+        <option value="$PROJECT_DIR$/src/revers/Reverser.java" />
       </list>
     </option>
   </component>
@@ -158,12 +155,6 @@
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="revers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -432,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513864648123</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Стек">
+      <created>1513932275405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1513932275405</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -483,7 +481,8 @@
     <MESSAGE value="Заменен линейный поиск на Бинарный поиск в insert" />
     <MESSAGE value="Заменен Бинарный поиск на линейный поиск в insert" />
     <MESSAGE value="Добавлен ряд простых сортировок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен ряд простых сортировок" />
+    <MESSAGE value="Стек" />
+    <option name="LAST_COMMIT_MESSAGE" value="Стек" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -517,7 +516,7 @@
         <state relative-caret-position="1513">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,7 +526,7 @@
         <state relative-caret-position="1156">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -700,7 +699,7 @@
         <state relative-caret-position="748">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,7 +709,7 @@
         <state relative-caret-position="1122">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/revers/Reverser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
